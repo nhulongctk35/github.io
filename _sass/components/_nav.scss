@@ -1,0 +1,29 @@
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__list {
+    flex: 1;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    line-height: 64px;
+    padding: 12px;
+    color: $white;
+  }
+
+  &__sub-menu {
+    display: none;
+  }
+
+  &--right {
+    text-align: right;
+  }
+}

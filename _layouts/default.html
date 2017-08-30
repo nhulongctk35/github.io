@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name='viewport' content='width=device-width, minimum-scale=1.0'>
+  <title>{{ page.title }} &ndash; CSS Wizardry &ndash; Web Performance Optimisation, and more, by LongNhuTran</title>
+
+  {% include meta.html %}
+
+  <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <link rel="shortcut icon" href="{{ site.baseurl }}/icon.png">
+  <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/icon.png">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml"
+  />
+
+</head>
+
+<body>
+
+  {{ content }}
+
+  <div class="wrapper-footer">
+    <div class="container">
+      <footer class="footer">
+        {% include svg-icons.html %}
+      </footer>
+    </div>
+  </div>
+
+  {% include analytics.html %}
+</body>
+
+</html>
