@@ -1,11 +1,25 @@
-$bg-grad: linear-gradient(to right, #807363 0%, #251d16 50%, #3f302b 75%, #100b09 100%);
-
 .page-head {
-  height: 426px;
-  position: static;
-  padding: 24px 0;
-  color: $white;
-  background-image: url(/images/master.jpg), $bg-grad;
-  background-size: cover;
-  background-position: center center;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+
+  &__master {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .9)), url(/images/master.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 426px;
+    position: relative;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-size: 72px;
+    line-height: 1;
+    font-weight: 300;
+  }
 }
