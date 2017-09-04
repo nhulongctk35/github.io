@@ -1,4 +1,4 @@
-.site-nav {
+.c-nav {
   display: flex;
   flex-wrap: wrap;
 
@@ -15,8 +15,12 @@
 
   &__link {
     line-height: 64px;
-    padding: 12px;
+    padding: 0 12px;
     color: $white;
+
+    &--active {
+      color: $color-primary;
+    }
   }
 
   &__sub-menu {

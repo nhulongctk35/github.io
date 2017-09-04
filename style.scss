@@ -21,7 +21,13 @@
 */
 
 @import "components/grid";
-@import "components/header";
-@import "components/nav";
-@import "components/home";
-@import "components/post";
+@import "components/button";
+
+/*
+* Pages
+*/
+@import "pages/header";
+@import "pages/nav";
+@import "pages/home";
+@import "pages/post";
+@import "pages/footer";

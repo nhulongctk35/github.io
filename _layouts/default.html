@@ -21,15 +21,16 @@
 
 <body>
 
-  {{ content }}
+  {% include header.html %}
 
-  <div class="wrapper-footer">
-    <div class="container">
-      <footer class="footer">
-        {% include svg-icons.html %}
-      </footer>
-    </div>
+  <div class="container container--wide">
+    {% include home.html %}
   </div>
+  <div class="container">
+    {{ content }}
+  </div>
+
+  {% include footer.html %}
 
   {% include analytics.html %}
 </body>

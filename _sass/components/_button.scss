@@ -1,0 +1,27 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  padding: 10px 22px;
+  background-color: $color-primary;
+  border: 2px solid $color-primary;
+  border-radius: 3px;
+  color: $white;
+
+  &:hover {
+    background-color: $color-primary-hover;
+    border-color: $color-primary-hover;
+  }
+
+  &--secondary {
+    background: none;
+    color: $color-primary;
+
+    &:hover {
+      background: none;
+      border-color: $color-primary-hover;
+      color: $color-primary-hover;
+    }
+  }
+}
