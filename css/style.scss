@@ -1,25 +1,24 @@
 ---
 ---
 
-//
-// IMPORTS
-//
-
+@charset "utf-8";
+/*
+* Reset default css
+*/
 @import "reset";
 @import "variables";
-// Syntax highlighting @import is at the bottom of this file
 
+/*
+* Base style
+*/
 @import "base";
 
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
 
 /*
 * Components
 */
-
 @import "components/grid";
 @import "components/button";
 
@@ -28,6 +27,5 @@
 */
 @import "pages/header";
 @import "pages/nav";
-@import "pages/home";
 @import "pages/post";
 @import "pages/footer";

@@ -1,12 +1,13 @@
 html {
-  font-size: 100%;
+  color: #333;
+  line-height: 1.5;
+  font-size: 1em;
+  background-color: #f9f9f9;
   box-sizing: border-box;
 }
 
 body {
-	background: $white;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
 }
 
 .container {
@@ -105,5 +106,14 @@ img {
 
   &__links-space {
     padding: 0  1.5rem;
+  }
+}
+
+.box {
+  padding: 24px;
+  border-radius: 3px;
+
+  &--highlight {
+    background-color: $white;
   }
 }

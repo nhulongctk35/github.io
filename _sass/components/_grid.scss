@@ -9,6 +9,18 @@
     }
   }
 
+  &__main-content {
+    padding-right: 24px;
+  }
+
+  &__two-thirds {
+    width: 66.666666666%;
+  }
+
+  &__one-thirds {
+    width: 33.333333333%
+  }
+
   &__item--full {
     flex: 1;
   }
