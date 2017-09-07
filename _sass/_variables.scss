@@ -10,9 +10,7 @@ $color-primary: #f43059;
 $color-primary-hover: #e50c39;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+$font-family: "Helvetica", "Arial", sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {
