@@ -1,14 +1,12 @@
 <section class="posts">
   {% for post in paginator.posts %}
   <article class="post">
-
-    <h2 class="post__title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-
+    <h2 class="post__title">
+      <a class="post__link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </h2>
     <div class="post__desc">
       {{ post.excerpt }}
     </div>
-
-    <a class="post__more" href="{{ site.baseurl }}{{ post.url }}">Read More</a>
   </article>
   {% endfor %}
 </section>

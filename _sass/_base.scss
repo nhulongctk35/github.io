@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   color: #333;
   line-height: 1.5;
@@ -42,12 +48,8 @@ a {
   &:active,
   &:hover {
     outline: none;
+    text-decoration: underline;
   }
-}
-
-ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
 }
 
 ul {
@@ -66,16 +68,13 @@ ul ul, ol ul {
   list-style-type: circle;
 }
 
-em, i {
-  font-style: italic;
-}
-
-strong, b {
-  font-weight: bold;
-}
-
 img {
   max-width: 100%;
+}
+
+small {
+  font-size: .75rem;
+  line-height: 2;
 }
 
 .promo {
@@ -94,7 +93,7 @@ img {
   border-radius: 3px;
 
   &--highlight {
-    background-color: $white;
+    background-color: $color-white;
   }
 }
 
@@ -105,3 +104,12 @@ img {
     list-style: none;
   }
 }
+
+.band {
+  padding: 48px;
+
+  &--ligh-grey {
+    background-color: $color-ligh-grey;
+  }
+}
+

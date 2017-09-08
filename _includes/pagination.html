@@ -1,9 +1,9 @@
 <ol class="grid list list--no-style">
-  <li class="grid__item">
-    {% if paginator.next_page %}
+  {% if paginator.next_page %}
+    <li class="grid__item">
       <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="btn btn--secondary">Xem tiếp</a>
-    {% endif %}
-  </li>
+    </li>
+  {% endif %}
 
   {% if paginator.previous_page %}
     <li class="grid__item">
