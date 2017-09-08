@@ -97,3 +97,11 @@ img {
     background-color: $white;
   }
 }
+
+.list {
+  padding: 0;
+
+  &--no-style {
+    list-style: none;
+  }
+}
