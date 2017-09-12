@@ -2,15 +2,29 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
+<article class="post post--details">
+  <h2 class="post__title">{{ page.title }}</h2>
+  <div class="post__content">
     {{ content }}
   </div>
-
-  <div class="date">
+  <div class="post__date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
+  <ul class="layout">
+    {% if page.previous.url %}
+    <li class="previous">
+      <a class="btn btn--secondary" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" title="{{page.previous.title}}">
+        Previous: {{page.previous.title}}
+      </a>
+    </li>
+    {% endif %}
+    {% if page.next.url %}
+    <li class="next">
+      <a class="btn btn--secondary" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" title="{{page.next.title}}">
+       Next: {{page.next.title}}
+      </a>
+    </li>
+    {% endif %}
+  </ul>
 </article>

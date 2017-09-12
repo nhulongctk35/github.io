@@ -1,12 +1,14 @@
 <section class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h2 class="post__title">
-      <a class="post__link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </h2>
-    <div class="post__desc">
-      {{ post.excerpt }}
-    </div>
-  </article>
-  {% endfor %}
+  <ul class="layout">
+    {% for post in paginator.posts %}
+      <li class="post">
+        <h2 class="post__title">
+          <a class="post__link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <div class="post__desc">
+          {{ post.excerpt }}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
 </section>

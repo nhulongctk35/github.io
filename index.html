@@ -3,4 +3,13 @@ layout: default
 title: Master JavaScript, React/Redux Developer, Supporter
 ---
 
-{% include post.html %}
+<div class="grid">
+  <div class="grid__item grid__two-thirds">
+    {% include post.html %}
+
+    {% include pagination.html %}
+  </div>
+  <div class="grid__item grid__one-thirds">
+    {% include sub-content.html %}
+  </div>
+</div>
