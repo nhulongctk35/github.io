@@ -7,16 +7,19 @@
   </a>
   <ul class="c-nav__list">
     <li class="c-nav__item">
-      <a href="/" class="c-nav__link c-nav__link--active">Home</a>
+      <a href="{{ site.baseurl }}/" class="c-nav__link {% if page.class == "home" %} c-nav__link--active {% endif %}">Home</a>
     </li>
     <li class="c-nav__item">
-      <a href="/portfolio/" class="c-nav__link">Portfolio</a>
+      <a href="{{ site.baseurl }}/about/" class="c-nav__link {% if page.class == "about" %} c-nav__link--active {% endif %}">About</a>
     </li>
     <li class="c-nav__item">
-      <a href="/resume/" class="c-nav__link">Resume</a>
+      <a href="{{ site.baseurl }}/portfolio/" class="c-nav__link {% if page.class == "portfolio" %} c-nav__link--active {% endif %}">Portfolio</a>
     </li>
     <li class="c-nav__item">
-      <a href="/work/" class="c-nav__link">Work</a>
+      <a href="{{ site.baseurl }}/resume/" class="c-nav__link {% if page.class == "resume" %} c-nav__link--active {% endif %}">Resume</a>
+    </li>
+    <li class="c-nav__item">
+      <a href="{{ site.baseurl }}/work/" class="c-nav__link {% if page.class == "work" %} c-nav__link--active {% endif %}">Work</a>
     </li>
   </ul>
 </nav>
