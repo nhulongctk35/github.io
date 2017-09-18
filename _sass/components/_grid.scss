@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  &--column {
+    flex-direction: column;
+  }
+
   &--3 {
     .grid__item {
       flex-basis: 30%;
