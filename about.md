@@ -14,5 +14,3 @@ scalable user interfaces. I am [available for work](/services/).
 
 <img src="{{ site.baseurl }}/images/master.jpg" alt="Long Tran Profile" />
 <br />
-<a href="http://csswizardry.com/services/" class="btn"><strong>Hire
-me.</strong></a>
