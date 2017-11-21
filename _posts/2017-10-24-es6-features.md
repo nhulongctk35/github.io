@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ES6 Features Every JavaScript Developer Must Know"
-date: 2017-07-31 16:10:13
+date: 2017-10-24 16:10:13
 categories: Web Development
 meta: "ES6 Features Every JavaScript Developer Must Know"
 ---

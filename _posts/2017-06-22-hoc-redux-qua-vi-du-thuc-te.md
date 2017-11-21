@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Học Redux qua ví dụ thực tế
+date: 2017-06-22
 ---
 
 Trong quá trình tìm hiểu về [Redux](http://redux.js.org/), tôi nhận ra rằng mình đã hiểu sai về [Flux](https://facebook.github.io/flux/docs/in-depth-overview.html#content) thông qua những bài viết mà tôi đã đọc. Tôi không có ý là những bài viết đó  không tốt mà là do tôi hiểu sai về những những khái niệm ( **actions / actions creators, store, dispatcher, etc** ).

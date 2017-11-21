@@ -1,10 +1,13 @@
-<section class="posts">
-  <ul class="layout">
+<section class="post">
+  <h3>Articles</h3>
+  <p>Hiện tại có tổng cộng <b>{{ site.posts | size  }}</b> bài viết trên blog <b>#nhulongctk35</b>.</p>
+  <ul class="layout post__list">
     {% for post in paginator.posts %}
-      <li class="post">
-        <h2 class="post__title">
+      <li class="post__item">
+        <time class="post__date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%-d %B, %Y" }}</time>
+        <h3 class="post__title">
           <a class="post__link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        </h2>
+        </h3>
       </li>
     {% endfor %}
   </ul>

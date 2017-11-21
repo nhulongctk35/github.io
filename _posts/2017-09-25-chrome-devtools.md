@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Một số thủ thuật khi làm việc với Chrome DevTools"
-date: 2017-07-31 16:10:13
+date: 2017-09-25 16:10:13
 categories: Web Development
 meta: "Chrome devtools"
 ---
