@@ -10,10 +10,10 @@ Trong bài viết này, tôi sẽ cover những tính năng mới của ES6 mà 
 ## 1. Let and Const
 Let khá là giống với var nó chỉ khác ở chỗ let có block scope. Những biến khai báo bằng let chỉ access được trong block scope mà nó được định nghĩa. Hãy nhìn 2 ví dụ dưới đây để thấy sự khác biệt giữa var và let.
 
-```
+<pre><code class="js">
 // Su dung var
 if (true) {
- var name = "ES6"';
+ var name = 'ES6';
 }
 console.log(c); // Output:  'ES6'
 
@@ -21,17 +21,20 @@ console.log(c); // Output:  'ES6'
 if (true) {
   let name = 'ES6';
 }
+
 console.log(name); // Output: name is not defined.
-```
+</code></pre>
+
 ## 2. Const
 const được dùng để khai báo hằng số. Giá trị của nó sẽ không được thay đổi một khi đã khai báo.
-```javascript
+<pre><code class="js">
 const a = 50;
 a = 60; // Output: You cannot change the value of const.
-```
+</code></pre>
+
 ## 3. Arrow Function
 Để dễ hình dung, tôi sẽ đưa ra cú pháp của arrow function.
-```javascript
+<pre><code class="js">
 (a, b) => a + b; // return a + b;
 
 (a, b) => {
@@ -43,13 +46,13 @@ a = 60; // Output: You cannot change the value of const.
   name: user.name,
   isSingle: user.isSingle,
 }) // return object. Lưu ý dấu ()
+</code></pre>
 
-```
 ## 4. Property Shorthand
 ECMAScript 6.
-`obj = { x, y }`
+<pre><code class="js">obj = { x, y };</code></pre>
 ECMAScript 5.
-`obj = { x: x, y: y };`
+<pre><code class="js">obj = { x: x, y: y };</code></pre>
 ## 5. Method Properties
 ECMAScript 6.
 ```javascript

@@ -12,15 +12,15 @@ Có thể bạn đã thấy sơ đồ này, sơ đồ này mô tả về khái n
 Trong bài viết này, Tôi sẽ dần dần giới thiệu cho các bạn về những khái niệm trong sơ đồ trên nhưng thay vì cố gắng giải thích tổng thể về diagram trên. Tôi sẽ chia nhỏ nó ra từng phần và gố gắng giải thích tại sao nó lại tồn tại và vai trò của nó trong sơ đồ này là gì. Cuối cùng bạn sẽ hiểu được toàn bộ sơ đồ trên khi đã hiểu được từng phần. Tôi chắc chắn rằng  sau khi đọc bài viết này bạn sẽ hiểu hơn về Redux và dễ dàng tham gia vào những dự án thực tế của công ty.
  ## 1. Action creator
 Những dòng code dưới đây sẽ nói lên tất cả action creator là gì.
-```javascript
+
+<pre><code class="js">
 // Action creator chẵng qua là 1 function ...
 var actionCreator = function() {
   // ... mà tạo ra 1 action (thực sự cái tên actionCreator đã nói lên tất cả) và nó return
    return {
      type: 'AN_ACTION'
   }
-}
-```
+}</code></pre>
 
 > Note: `Action trong Redux là một object mà bắt buộc phải có ít nhất 1 property là "type". Mục đích của prop Type này là để Reducer nhận biết được là Action nào`.
 Action ngoài prop type nó còn có thể bao gồm nhiều props khác để truyền data qua Reducer.
