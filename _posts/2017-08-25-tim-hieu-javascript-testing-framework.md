@@ -52,6 +52,7 @@ test('adds 1 + 2 to equal 3', (t) => {
 });
 ```
 **Kết quả:**
+
 ![](https://viblo.asia/uploads/6ab69f7c-85bf-448e-9e6e-fb3f95144e20.png)
 
 Nếu bạn đã từng sử dụng thằng Jest hay Jasmine. Thì chắc bạn đã nghe qua **test suite**. Nhưng trong ava tôi không thấy có test suite mà thay vào đó là từng `test case` . Mỗi test case là một function và bạn sử dụng assertion để kiểm tra tính đúng đắn của đoạn code mà bạn đang muốn test.
